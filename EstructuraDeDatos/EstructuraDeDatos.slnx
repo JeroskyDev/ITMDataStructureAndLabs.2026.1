@@ -1,1 +1,5 @@
-<Solution />
+<Solution>
+  <Folder Name="/Exercise1/">
+    <Project Path="IsOddOrNot/IsOddOrNot.csproj" Id="a3a41dd0-92df-45a0-87ab-db29f56f9fa6" />
+  </Folder>
+</Solution>
