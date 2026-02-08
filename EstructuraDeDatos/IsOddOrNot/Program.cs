@@ -52,7 +52,7 @@ var numberString = string.Empty;
 
 do
 {
-    Console.WriteLine("Ingrese un número... o ingrese la palabra 'Salir' para salir."); //CTRL + C is used for closing an app proccess. 
+    Console.WriteLine("Ingrese un número... o ingrese la palabra 'Salir' para salir."); //CTRL + C is used for closing an app proccess, but we will use the word "Salir".
     numberString = Console.ReadLine();
 
     //if the string is "S" or "s", then continue and don´t do the odd validation (so we don´t get any unneccessary messages after we end the app/program

@@ -2,4 +2,7 @@
   <Folder Name="/Exercise1/">
     <Project Path="IsOddOrNot/IsOddOrNot.csproj" Id="a3a41dd0-92df-45a0-87ab-db29f56f9fa6" />
   </Folder>
+  <Folder Name="/Exercise2/">
+    <Project Path="BiggerNumber/GreatestNumber.csproj" Id="a6d440fd-0d91-40e6-86e5-c81db17531e2" />
+  </Folder>
 </Solution>
