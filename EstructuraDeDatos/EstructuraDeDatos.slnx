@@ -11,4 +11,7 @@
   <Folder Name="/Exercise4/">
     <Project Path="IsMultipleOfAnotherOrNah/IsMultipleOfAnotherOrNah.csproj" Id="208168d4-bcd4-4ed3-8cf2-0ae3781b0529" />
   </Folder>
+  <Folder Name="/Exercise5/">
+    <Project Path="LeapYear/LeapYear.csproj" Id="e77cee15-6523-469e-b330-e1ec915d0dc3" />
+  </Folder>
 </Solution>
