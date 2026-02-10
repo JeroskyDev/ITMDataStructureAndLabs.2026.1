@@ -19,19 +19,6 @@ do
         return;
     }
 
-    Console.WriteLine("Ingrese segundo número");
-    bString = Console.ReadLine();
-    var bInt = 0;
-    if (int.TryParse(bString, out bInt))
-    {
-        bInt = int.Parse(bString!);
-    }
-    else
-    {
-        Console.WriteLine($"{bString} NO es un número, intente de nuevo");
-        return;
-    }
-
     //verify if numbers are equal so it wont make the loop
     if (aInt == bInt)
     {

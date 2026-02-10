@@ -4,7 +4,6 @@ var bString = string.Empty;
 
 do
 {
-    Console.WriteLine("Ingrese dos números...");
 
     Console.WriteLine("Ingrese el primer número");
     aString = Console.ReadLine();

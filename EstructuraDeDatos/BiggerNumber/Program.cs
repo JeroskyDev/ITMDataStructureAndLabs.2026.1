@@ -6,10 +6,6 @@ one out of all of them, its similar to the is it odd program
 Console.WriteLine("=======================================");
 Console.WriteLine("PROGRAMA: Número mayor entre 3 números");
 Console.WriteLine("=======================================");
-var numberString = string.Empty;
-var aString = string.Empty;
-var bString = string.Empty;
-var cString = string.Empty;
 
 do
 {
@@ -39,18 +35,6 @@ do
             continue;
         }
 
-        Console.WriteLine("Ingrese el segundo número...");
-        bString = Console.ReadLine();
-        var bInt = 0;
-        if (int.TryParse(bString, out bInt))
-        {
-            bInt = int.Parse(bString!);
-        }
-        else
-        {
-            Console.WriteLine($"{bString} NO es un número, intentalo de nuevo...");
-            continue;
-        }
 
         Console.WriteLine("Ingrese el tercer número...");
         cString = Console.ReadLine();
