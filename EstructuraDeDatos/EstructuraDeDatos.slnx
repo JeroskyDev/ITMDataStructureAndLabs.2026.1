@@ -14,4 +14,10 @@
   <Folder Name="/Exercise5/">
     <Project Path="LeapYear/LeapYear.csproj" Id="e77cee15-6523-469e-b330-e1ec915d0dc3" />
   </Folder>
+  <Folder Name="/Exercise6/">
+    <Project Path="BasicPayroll/BasicPayroll.csproj" Id="94514ae3-00d2-448e-a353-71f5f2852cb4" />
+  </Folder>
+  <Folder Name="/Shared/">
+    <Project Path="Shared/Shared.csproj" Id="a034b2c8-5554-4db9-a53f-1ac9230bf3c9" />
+  </Folder>
 </Solution>

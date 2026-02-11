@@ -48,12 +48,16 @@
 */
 
 //initialize numberString variable here first before doing the cycle, so we can use it as a exit app shortcut
-var numberString = string.Empty;
+using Shared;
+
+//var numberString = string.Empty; -- we don´t use it anymore, we have the class that makes this process easier
+
+var answer = string.Empty;
+var options = new List<string> { "s", "n" };
 
 do
 {
-    Console.WriteLine("Ingrese un número... o ingrese la palabra 'Salir' para salir."); //CTRL + C is used for closing an app proccess, but we will use the word "Salir".
-    numberString = Console.ReadLine();
+    var number = ConsoleExtension.GetInt("Ingrese un número entero diferente de cero... ");
 
     //if the string is "S" or "s", then continue and don´t do the odd validation (so we don´t get any unneccessary messages after we end the app/program
     /*
@@ -61,13 +65,15 @@ do
      * and lowercase combined, or either one of them, it will always be converted to just "salir"
      * and now the app is really intuitive and interactive
      */
-    if (numberString!.ToLower() == "salir")
+    if (number == 0)
     {
         continue;
     }
+
+    //-------------DO NOT USE ANYMORE, WE HAVE A CLASS--------------------------
     //var numberInt = int.Parse(numberString!); // this doesn´t work for number validation, we should use the .TryParse() function
     //initialize numberInt
-    var numberInt = 0;
+    //var numberInt = 0;
 
     //parse numberString to an integer, and whatever gets parsed, put it in a variable called "numberInt"
     //int.TryParse(numberString, out numberInt);
@@ -77,24 +83,39 @@ do
      * 
      * Let´s put the TryParse in an if statement, and if it´s true, then, make the odd number
      * validation.
-     */
-
-    if (int.TryParse(numberString, out numberInt))
-    {
-        if (numberInt % 2 == 0)
+     * 
+        if (int.TryParse(numberString, out numberInt))
         {
-            Console.WriteLine($"El número: {numberInt}, es Par!");
+            if (numberInt % 2 == 0)
+            {
+                Console.WriteLine($"El número: {numberInt}, es Par!");
+            }
+            else
+            {
+                Console.WriteLine($"El número: {numberInt}, es Impar...");
+            }
         }
         else
         {
-            Console.WriteLine($"El número: {numberInt}, es Impar...");
+            Console.WriteLine($"Lo que ingresaste: {numberString}, NO es un número entero, intenta de nuevo...");
         }
+     */
+    //-------------DO NOT USE ANYMORE, WE HAVE A CLASS--------------------------
+
+    if (number % 2 == 0)
+    {
+        Console.WriteLine($"El número: {number}, es Par!");
     }
     else
     {
-        Console.WriteLine($"Lo que ingresaste: {numberString}, NO es un número entero, intenta de nuevo...");
+        Console.WriteLine($"El número: {number}, es Impar...");
     }
 
-    
-} while (numberString!.ToLower() != "salir"); //while numberString is different than "salir", execute the cycle, if the input is "salir" then exit the program.
+    //lets make another cycle for looking if the user wants to add more numberrs, with the new class we have
+    do
+    {
+        answer = ConsoleExtension.GetValidOptions("¿Desea continuar? [S]i, [N]o: ", options);
+    } while (!options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)));
+
+} while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase)); //while numberString is different than "salir", execute the cycle, if the input is "salir" then exit the program.
 Console.WriteLine("Gracias por usar el programa! Game Over :)");

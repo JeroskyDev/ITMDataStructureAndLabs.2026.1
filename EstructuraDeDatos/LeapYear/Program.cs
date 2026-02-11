@@ -7,6 +7,9 @@
 //if it isn´t a multiple of 4, then it isn´t a leap year
 //is it is a multiple of 4 and 100 only, then it isn´t a leap year
 
+var answer = string.Empty;
+var options = new List<string> { "s", "n" };
+
 do
 {
     //let´s get the current year to make the program even better and if we ask for a year in the past then it says "fue/no fue bisiesto" but in the present it says "fue bisiesto"
@@ -54,4 +57,11 @@ do
     {
         Console.WriteLine($"El año {year} NO {message} un año bisiesto.");
     }
-} while (true);
+
+    do
+    {
+        answer = ConsoleExtension.GetValidOptions("¿Desea continuar? [S]i, [N]o: ", options);
+    } while (!options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)));
+
+} while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
+Console.WriteLine("Gracias por usar el programa! Game Over :)");
