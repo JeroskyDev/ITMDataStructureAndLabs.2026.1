@@ -23,6 +23,9 @@
   <Folder Name="/Exercise8/">
     <Project Path="RegistrationValue/RegistrationValue.csproj" Id="e7eea9e1-f2e9-42ea-a0c4-cfe16f8ec66f" />
   </Folder>
+  <Folder Name="/Exercise9/">
+    <Project Path="GoodsSupplying/GoodsSupplying.csproj" Id="b7a454fe-86a9-4f8a-b286-a62b04a2cbff" />
+  </Folder>
   <Folder Name="/Shared/">
     <Project Path="Shared/Shared.csproj" Id="a034b2c8-5554-4db9-a53f-1ac9230bf3c9" />
   </Folder>
