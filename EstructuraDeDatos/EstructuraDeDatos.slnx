@@ -29,8 +29,14 @@
   <Folder Name="/Exercise18/">
     <Project Path="FibonacciSequenceMod/FibonacciSequenceMod.csproj" Id="f19db88a-dfb1-4fde-99a0-21e8d8b24132" />
   </Folder>
+  <Folder Name="/Exercise19/">
+    <Project Path="IsItPrime/IsItPrime.csproj" Id="59a2a0fe-e49e-4c69-9c6b-e0b911569e86" />
+  </Folder>
   <Folder Name="/Exercise2/">
     <Project Path="BiggerNumber/GreatestNumber.csproj" Id="a6d440fd-0d91-40e6-86e5-c81db17531e2" />
+  </Folder>
+  <Folder Name="/Exercise20/">
+    <Project Path="PrimeNumbers/PrimeNumbers.csproj" Id="5f32922d-75ee-40d5-882d-75a924c132de" />
   </Folder>
   <Folder Name="/Exercise3/">
     <Project Path="NumberOrdenation/NumberSorting.csproj" Id="fbdf8132-45c5-4f06-a9e1-d332a31d06f2" />
