@@ -118,7 +118,7 @@ decimal ExhibitionCostCalculation(string productType, string conservationType, s
     return 0;
 }
 
-float ProductDepreciationRateCalculation(int storagePeriod)
+float ProductDepreciationRateCalculation(int storagePeriod) //when returning just percentages, always do them with float values, then change their type value
 {
     if (storagePeriod <= 0)
     {
