@@ -56,6 +56,9 @@
   <Folder Name="/Exercise26/">
     <Project Path="VectorSorting/VectorSorting.csproj" Id="26ad2ce1-d63a-417f-a1e6-4d4fcc224789" />
   </Folder>
+  <Folder Name="/Exercise27/">
+    <Project Path="PalindromePhrases/PalindromePhrases.csproj" Id="2337163b-b0f4-41a7-b7fd-bd6af9d29bb6" />
+  </Folder>
   <Folder Name="/Exercise3/">
     <Project Path="NumberOrdenation/NumberSorting.csproj" Id="fbdf8132-45c5-4f06-a9e1-d332a31d06f2" />
   </Folder>
