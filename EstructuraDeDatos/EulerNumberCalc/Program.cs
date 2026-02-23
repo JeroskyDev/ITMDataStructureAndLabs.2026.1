@@ -19,12 +19,12 @@ do
 
 double EulerCalculation(int n)
 {
-    double euler = 0;
+    double sum = 0;
     for (int i = 0; i < n; i++)
     {
-        euler += 1 / MyMath.Factorial(i);
+        sum += 1 / MyMath.Factorial(i);
     }
-    return euler;
+    return sum;
 }
 
 Console.WriteLine("Gracias por usar el programa! Game over :)");
