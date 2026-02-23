@@ -38,6 +38,9 @@
   <Folder Name="/Exercise20/">
     <Project Path="PrimeNumbers/PrimeNumbers.csproj" Id="5f32922d-75ee-40d5-882d-75a924c132de" />
   </Folder>
+  <Folder Name="/Exercise21/">
+    <Project Path="EulerNumberCalc/EulerNumberCalc.csproj" Id="f467f001-2105-42c1-8b98-60b05aaefa23" />
+  </Folder>
   <Folder Name="/Exercise3/">
     <Project Path="NumberOrdenation/NumberSorting.csproj" Id="fbdf8132-45c5-4f06-a9e1-d332a31d06f2" />
   </Folder>

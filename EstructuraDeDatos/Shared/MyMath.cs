@@ -18,7 +18,7 @@ namespace Shared
 
         public static bool IsPrime(int n)
         {
-            for (int i = 2; i < Math.Sqrt(n); i++) //use the square root so we can divide n by every number that is less than n
+            for (int i = 2; i <= Math.Sqrt(n); i++) //use the square root so we can divide n by every number that is less than n
             {
                 if (n % i == 0) //and if there is no residue, then it isn´t a prime number.
                 {
