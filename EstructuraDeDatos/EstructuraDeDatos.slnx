@@ -44,6 +44,9 @@
   <Folder Name="/Exercise22/">
     <Project Path="PiNumberCalc/PiNumberCalc.csproj" Id="9b32e738-035b-415e-9afa-6bcf82f2c698" />
   </Folder>
+  <Folder Name="/Exercise23/">
+    <Project Path="YearCalendar/YearCalendar.csproj" Id="442834ee-f197-4173-881e-2aa04110dc8f" />
+  </Folder>
   <Folder Name="/Exercise3/">
     <Project Path="NumberOrdenation/NumberSorting.csproj" Id="fbdf8132-45c5-4f06-a9e1-d332a31d06f2" />
   </Folder>

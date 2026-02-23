@@ -31,32 +31,40 @@ do
         message = "fue";
     }
 
+    //THIS IS AFTER EXERCISE 23
+    //use Shared method for seeing if a year is leap or not
+    var isLeapYear = DateUtilities.IsLeapYear(year);
+
+    Console.WriteLine($"El año {year}, { (isLeapYear ? "SI" : "NO") } {message} un año bisiesto.");
+
+    //THIS IS AFTER EXERCISE 23
+
     //if it´s a multiple of 4 then look if it´s multiple of a 100 and if it is, then it isnt a leap year
-    if (year % 4 == 0)
-    {
-        //with just multiple of 4 it could probably be a leap year
-        //if it´s a multiple of 4 and of 100 then it isnt a leap year
-        if (year % 100 == 0)
-        {
-            //if it is a multiple of 400, then it checks all the conditions and the year is definetely a leap year.
-            if (year % 400 == 0)
-            {
-                Console.WriteLine($"El año {year} SI {message} un año bisiesto.");
-            }
-            else //is not a leap year because it doesn´t check all of the conditions.
-            {
-                Console.WriteLine($"El año {year} NO {message} un año bisiesto.");
-            }
-        }
-        else // it is a leap year if it´s just a multiple of 4 then
-        {
-            Console.WriteLine($"El año {year} SI {message} un año bisiesto.");
-        }
-    }
-    else //it is NOT a leap year
-    {
-        Console.WriteLine($"El año {year} NO {message} un año bisiesto.");
-    }
+    // if (year % 4 == 0)
+    // {
+    //with just multiple of 4 it could probably be a leap year
+    //if it´s a multiple of 4 and of 100 then it isnt a leap year
+    // if (year % 100 == 0)
+    // {
+    //if it is a multiple of 400, then it checks all the conditions and the year is definetely a leap year.
+    // if (year % 400 == 0)
+    // {
+    // Console.WriteLine($"El año {year} SI {message} un año bisiesto.");
+    // }
+    // else //is not a leap year because it doesn´t check all of the conditions.
+    // {
+    // Console.WriteLine($"El año {year} NO {message} un año bisiesto.");
+    // }
+    // }
+    // else // it is a leap year if it´s just a multiple of 4 then
+    // {
+    // Console.WriteLine($"El año {year} SI {message} un año bisiesto.");
+    // }
+    // }
+    // else //it is NOT a leap year
+    // {
+    // Console.WriteLine($"El año {year} NO {message} un año bisiesto.");
+    // }
 
     do
     {
