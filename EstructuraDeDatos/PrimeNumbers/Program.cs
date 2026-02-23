@@ -1,6 +1,5 @@
 ﻿//Program for prime numbers show, summation and average calculation
 using Shared;
-using System.IO.Pipelines;
 
 var answer = string.Empty;
 var options = new List<string> { "s", "n" };

@@ -1,7 +1,6 @@
 ﻿//year calendar calculation
 //for leap year calculation lets create a new class because it is reusable
 using Shared;
-using System.Net.WebSockets;
 
 var answer = string.Empty;
 var options = new List<string> { "s", "n" };

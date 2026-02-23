@@ -47,6 +47,12 @@
   <Folder Name="/Exercise23/">
     <Project Path="YearCalendar/YearCalendar.csproj" Id="442834ee-f197-4173-881e-2aa04110dc8f" />
   </Folder>
+  <Folder Name="/Exercise24/">
+    <Project Path="OddAndEvenInAnArray/OddAndEvenInAnArray.csproj" Id="563abb4a-85f8-41e7-900f-136fd3807f91" />
+  </Folder>
+  <Folder Name="/Exercise25/">
+    <Project Path="VectorOperations/VectorOperations.csproj" Id="027150ab-50b1-468a-98e6-ef85f702337c" />
+  </Folder>
   <Folder Name="/Exercise3/">
     <Project Path="NumberOrdenation/NumberSorting.csproj" Id="fbdf8132-45c5-4f06-a9e1-d332a31d06f2" />
   </Folder>
