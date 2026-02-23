@@ -1,5 +1,4 @@
-﻿//console app that creates a vector of N positions, fills every cell with random numbers, then abstracts all of the cell values, and then the average of all of the cells values.
-using Shared;
+﻿using Shared;
 
 var answer = string.Empty;
 var options = new List<string> { "s", "n" };
@@ -8,7 +7,7 @@ do
 {
     //blueprint (data input)
     Console.Clear();
-    Console.WriteLine("*** OPERACIONES CON VECTORES ***");
+    Console.WriteLine("*** ORDENACIÓN ESPECIAL DEL VECTOR ***");
 
     //processes
     var positions = ConsoleExtension.GetInt("¿Cuántas posiciones desea?: ");
@@ -16,10 +15,13 @@ do
     FillArray(vectorArray);
 
     //show result
+    Console.WriteLine("SIN ORDENAR");
     ShowArray(vectorArray);
-    Console.WriteLine($"La sumatoria es: {vectorArray.Sum(),30:N2}");
-    Console.WriteLine($"El promedio es: {vectorArray.Average(),30:N2}");
-    
+    OrderArray(vectorArray);
+
+    Console.WriteLine($"\nORDENADO");
+    ShowArray(vectorArray);
+
     do
     {
         answer = ConsoleExtension.GetValidOptions("¿Deseas continuar [S]í, [N]o?....: ", options);
@@ -27,11 +29,33 @@ do
 } while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
 Console.WriteLine("Gracias por usar el programa! Game Over :)");
 
+void OrderArray(int[] vectorArray) //bubble sort algorithm
+{
+    for (int i = 0; i < vectorArray.Length - 1; i++)
+    {
+        for (int j = i + 1; j < vectorArray.Length; j++)
+        {
+            if (vectorArray[i] > vectorArray[j]) // if (<) it orders descendantly, and if (>) it orders ascendently
+            {
+                //change the numbers with an auxiliar variable
+                //this can be done in a separated method too.
+                int aux = vectorArray[i];
+                vectorArray[i] = vectorArray[j];
+                vectorArray[j] = aux;
+            }
+            else
+            {
+
+            }
+        }
+    }
+}
+
 void ShowArray(int[] vectorArray)
 {
     foreach (var number in vectorArray)
     {
-        Console.Write($"\t{number:N0}");
+        Console.Write($"vec = {number:N0}\n");
     }
     Console.WriteLine();
 }
